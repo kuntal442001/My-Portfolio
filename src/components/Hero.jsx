@@ -75,7 +75,7 @@ export default function Hero() {
                 View Projects
                 <FaArrowRight size={12} />
               </a>
-              <a href="/resume.pdf" download className="btn-ghost">
+              <a href="/Resume.pdf" download className="btn-ghost">
                 <FaDownload size={12} />
                 Download Resume
               </a>
@@ -90,9 +90,9 @@ export default function Hero() {
               className="mt-14 grid grid-cols-3 gap-6 max-w-md mx-auto lg:mx-0"
             >
               {[
-                { value: '2+', label: 'Years Building' },
+                { value: '3+', label: 'Years Building' },
                 { value: '20+', label: 'Sites Shipped' },
-                { value: '100%', label: 'Performance Focus' },
+                { value: '99%', label: 'Performance Focus' },
               ].map((s) => (
                 <div key={s.label} className="text-center lg:text-left">
                   <div className="font-display text-2xl font-bold text-accent tabular-nums">

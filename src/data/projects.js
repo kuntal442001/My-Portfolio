@@ -28,18 +28,18 @@ export const projects = [
   {
     id: 'palini',
     name: 'Palini.in',
-    tagline: 'Production WordPress website built for a real business.',
+    tagline: 'Production Wordpress website built for a real business.',
     url: 'https://www.palini.in/',
     liveUrl: 'https://www.palini.in/',
     github: null,
     image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80&auto=format&fit=crop',
     overview:
-      'A live, business-critical WordPress deployment for Palini — built with Elementor, custom post types, and ACF for fully editable content blocks. Optimized for Core Web Vitals and search visibility.',
+      'A live, business-critical Wordpress deployment for Palini — built with Elementor, custom post types, and ACF for fully editable content blocks. Optimized for Core Web Vitals and search visibility.',
     problem:
-      'The client needed a fast, SEO-friendly WordPress site that non-technical team members could update themselves — without sacrificing performance, branding control, or technical SEO structure.',
+      'The client needed a fast, SEO-friendly Wordpress site that non-technical team members could update themselves — without sacrificing performance, branding control, or technical SEO structure.',
     solution:
-      'Architected a custom WordPress theme layer with Elementor templates, ACF flexible content blocks, and a tailored CPT for the client\u2019s services. Implemented schema markup, image lazy-loading, and a clean permalink structure.',
-    technologies: ['WordPress', 'Elementor', 'ACF', 'Custom Post Types', 'Technical SEO', 'PHP'],
+      'Architected a custom Wordpress theme layer with Elementor templates, ACF flexible content blocks, and a tailored CPT for the client\u2019s services. Implemented schema markup, image lazy-loading, and a clean permalink structure.',
+    technologies: ['Wordpress', 'Elementor', 'ACF', 'PHP', 'HTML5', 'CSS3', 'JavaScript'],
     challenges: [
       'Balancing Elementor\u2019s editor flexibility with frontend performance.',
       'Building ACF blocks that content editors could reuse without breaking layout.',
@@ -54,18 +54,18 @@ export const projects = [
   {
     id: 'spincare',
     name: 'SpinCare.in',
-    tagline: 'Healthcare-focused WordPress site with conversion-first UX.',
+    tagline: 'Laundry Business Wordpress site with conversion-first UX.',
     url: 'https://spincare.in/',
     liveUrl: 'https://spicare.in/',
     github: null,
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80&auto=format&fit=crop',
     overview:
-      'A live WordPress build for SpinCare — a healthcare brand that needed an authoritative, fast, and trustworthy web presence with strong on-page SEO and clear conversion paths.',
+      'A live Wordpress build for SpinCare — a healthcare brand that needed an authoritative, fast, and trustworthy web presence with strong on-page SEO and clear conversion paths.',
     problem:
       'Healthcare audiences demand trust signals, fast load times, and accessible content. The client also needed structured service pages and schema for local search visibility.',
     solution:
-      'Built a custom WordPress architecture with Elementor Pro templates, ACF-driven service pages, breadcrumbs, FAQ schema, and a performance-first asset pipeline. Optimized images, deferred non-critical JS, and cleaned up render-blocking resources.',
-    technologies: ['WordPress', 'Elementor Pro', 'ACF', 'On-Page SEO', 'Schema', 'Performance Optimization'],
+      'Built a custom Wordpress architecture with Elementor Pro templates, ACF-driven service pages, breadcrumbs, FAQ schema, and a performance-first asset pipeline. Optimized images, deferred non-critical JS, and cleaned up render-blocking resources.',
+    technologies: ['Wordpress', 'Elementor Pro', 'ACF', 'On-Page SEO', 'Schema', 'Performance Optimization'],
     challenges: [
       'Meeting healthcare accessibility and trust guidelines without slowing the site.',
       'Structuring service pages for both users and search engines.',
@@ -91,7 +91,7 @@ export const projects = [
       'Existing translator UIs often feel cluttered and slow. The goal was a focused, fast, and accessible translation interface that works on any device.',
     solution:
       'Built a responsive React frontend with debounced input, language swap, and a clean state container. Integrated a public translation API and added copy-to-clipboard, clear, and history features.',
-    technologies: ['React', 'JavaScript', 'Tailwind CSS', 'REST API', 'Vite'],
+    technologies: ['python'],
     challenges: [
       'Debouncing API calls to avoid spamming the endpoint while typing.',
       'Designing a layout that stays calm even with long translated outputs.',
@@ -117,7 +117,7 @@ export const projects = [
       'Building a voice assistant that works reliably across browsers, with low latency and a clear visual feedback loop for the user.',
     solution:
       'Used the Web Speech API for both speech recognition and synthesis. Designed a state machine for listening, processing, and speaking states, with a clean animated UI that responds to each phase.',
-    technologies: ['React', 'JavaScript', 'Web Speech API', 'Tailwind CSS', 'Vite'],
+    technologies: ['Python', 'Web Speech API'],
     challenges: [
       'Cross-browser inconsistencies in speech recognition.',
       'Designing state transitions that feel natural for voice interactions.',

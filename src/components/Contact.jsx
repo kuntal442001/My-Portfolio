@@ -1,26 +1,38 @@
-import { motion } from 'framer-motion'
-import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaDownload, FaArrowRight } from 'react-icons/fa'
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import {
+  FaEnvelope,
+  FaPhone,
+  FaLinkedin,
+  FaGithub,
+  FaDownload,
+  FaArrowRight,
+  FaWhatsapp,
+  FaTimes,
+} from 'react-icons/fa'
+
+const WHATSAPP_NUMBER = '919007216627' // country code + number, no + or spaces
 
 const channels = [
   {
     id: 'email',
     label: 'Email',
-    value: 'kuntal.bhattacharyya@example.com',
-    href: 'mailto:kuntal.bhattacharyya@example.com',
+    value: 'kuntal442001@gmail.com',
+    href: 'mailto:kuntal442001@gmail.com',
     icon: FaEnvelope,
   },
   {
     id: 'phone',
     label: 'Phone',
-    value: '+91 9900000000',
-    href: 'tel:+919900000000',
+    value: '+91 9007216627',
+    href: 'tel:+91 9007216627',
     icon: FaPhone,
   },
   {
     id: 'linkedin',
     label: 'LinkedIn',
     value: '/in/kuntal-bhattacharyya',
-    href: 'https://www.linkedin.com/in/kuntal-bhattacharyya',
+    href: 'https://www.linkedin.com/in/kuntal-b-668b73222/',
     icon: FaLinkedin,
   },
   {
@@ -32,7 +44,133 @@ const channels = [
   },
 ]
 
+function ContactModal({ onClose }) {
+  const [form, setForm] = useState({ phone: '', email: '', message: '' })
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setForm((prev) => ({ ...prev, [name]: value }))
+  }
+
+  const buildWhatsAppText = () => {
+    const lines = [
+      'Hi Kuntal, I would like to get in touch.',
+      form.email ? `Email: ${form.email}` : null,
+      form.phone ? `Phone: ${form.phone}` : null,
+      form.message ? `Message: ${form.message}` : null,
+    ].filter(Boolean)
+    return encodeURIComponent(lines.join('\n'))
+  }
+
+  const whatsappHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${buildWhatsAppText()}`
+
+  return (
+    <motion.div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2 }}
+    >
+      {/* Backdrop */}
+      <div
+        className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+        onClick={onClose}
+      />
+
+      <motion.div
+        className="relative z-10 w-full max-w-md rounded-2xl glass-strong p-6 md:p-8"
+        initial={{ opacity: 0, y: 24, scale: 0.97 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        exit={{ opacity: 0, y: 16, scale: 0.97 }}
+        transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+      >
+        <button
+          onClick={onClose}
+          aria-label="Close"
+          className="absolute top-4 right-4 grid h-8 w-8 place-items-center rounded-lg text-white/50 hover:text-white hover:bg-white/[0.06] transition-colors"
+        >
+          <FaTimes size={13} />
+        </button>
+
+        <div className="section-label">
+          <span className="h-px w-6 bg-accent/60" />
+          Get In Touch
+        </div>
+
+        <h3 className="text-xl md:text-2xl font-semibold text-white mt-2">
+          Tell me about your project
+        </h3>
+
+        <div className="mt-6 space-y-4">
+          <div>
+            <label htmlFor="contact-phone" className="text-[10px] font-mono uppercase tracking-wider text-white/40">
+              Phone
+            </label>
+            <input
+              id="contact-phone"
+              name="phone"
+              type="tel"
+              value={form.phone}
+              onChange={handleChange}
+              placeholder="+91 00000 00000"
+              className="mt-1.5 w-full rounded-lg bg-white/[0.04] border border-white/10 px-3.5 py-2.5 text-sm text-white/90 placeholder-white/30 outline-none focus:border-accent/50 focus:bg-white/[0.06] transition-colors"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="contact-email" className="text-[10px] font-mono uppercase tracking-wider text-white/40">
+              Email
+            </label>
+            <input
+              id="contact-email"
+              name="email"
+              type="email"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="you@example.com"
+              className="mt-1.5 w-full rounded-lg bg-white/[0.04] border border-white/10 px-3.5 py-2.5 text-sm text-white/90 placeholder-white/30 outline-none focus:border-accent/50 focus:bg-white/[0.06] transition-colors"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="contact-message" className="text-[10px] font-mono uppercase tracking-wider text-white/40">
+              Message
+            </label>
+            <textarea
+              id="contact-message"
+              name="message"
+              rows={4}
+              value={form.message}
+              onChange={handleChange}
+              placeholder="how can i help you"
+              className="mt-1.5 w-full resize-none rounded-lg bg-white/[0.04] border border-white/10 px-3.5 py-2.5 text-sm text-white/90 placeholder-white/30 outline-none focus:border-accent/50 focus:bg-white/[0.06] transition-colors"
+            />
+          </div>
+        </div>
+
+        <a
+          href={whatsappHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary mt-6 w-full justify-center"
+        >
+          <FaWhatsapp size={14} />
+          Continue on WhatsApp
+          <FaArrowRight size={11} />
+        </a>
+
+        <p className="mt-3 text-center text-[11px] text-white/35">
+          Opens WhatsApp with your details pre-filled &mdash; nothing is sent until you hit send there.
+        </p>
+      </motion.div>
+    </motion.div>
+  )
+}
+
 export default function Contact() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
     <section id="contact" className="relative section-py">
       <div className="container-px w-full max-w-5xl mx-auto">
@@ -69,12 +207,12 @@ export default function Contact() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-3 justify-center">
-              <a href="mailto:kuntal.bhattacharyya@example.com" className="btn-primary">
+              <button onClick={() => setIsModalOpen(true)} className="btn-primary">
                 <FaEnvelope size={12} />
                 Start a Conversation
                 <FaArrowRight size={11} />
-              </a>
-              <a href="/resume.pdf" download className="btn-ghost">
+              </button>
+              <a href="/Resume.pdf" download className="btn-ghost">
                 <FaDownload size={12} />
                 Download Resume
               </a>
@@ -111,6 +249,10 @@ export default function Contact() {
           </div>
         </motion.div>
       </div>
+
+      <AnimatePresence>
+        {isModalOpen && <ContactModal onClose={() => setIsModalOpen(false)} />}
+      </AnimatePresence>
     </section>
   )
 }

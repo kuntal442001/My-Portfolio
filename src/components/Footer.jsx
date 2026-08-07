@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { FaLinkedin, FaGithub, FaArrowUp, FaHeart } from 'react-icons/fa'
 
 const socials = [
-  { id: 'linkedin', href: 'https://www.linkedin.com/in/kuntal-bhattacharyya', icon: FaLinkedin, label: 'LinkedIn' },
+  { id: 'linkedin', href: 'https://www.linkedin.com/in/kuntal-b-668b73222/', icon: FaLinkedin, label: 'LinkedIn' },
   { id: 'github', href: 'https://github.com/kuntal442001', icon: FaGithub, label: 'GitHub' },
 ]
 
@@ -81,7 +81,7 @@ export default function Footer() {
               href="mailto:kuntal.bhattacharyya@example.com"
               className="mt-4 inline-block text-sm text-white/60 hover:text-accent transition-colors"
             >
-              kuntal.bhattacharyya@example.com
+              kuntal442001@gmail.com
             </a>
           </div>
         </div>

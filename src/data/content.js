@@ -9,7 +9,7 @@ export const skillCategories = [
     id: 'backend',
     label: 'Backend',
     icon: 'FaServer',
-    skills: ['PHP', 'Python', 'SQL'],
+    skills: ['PHP', 'Node.js', 'Python', 'SQL'],
   },
   {
     id: 'cms',
