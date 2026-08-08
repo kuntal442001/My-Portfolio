@@ -91,7 +91,7 @@ export default function Hero() {
             >
               {[
                 { value: '3+', label: 'Years Building' },
-                { value: '20+', label: 'Sites Shipped' },
+                { value: '30+', label: 'Sites Shipped' },
                 { value: '99%', label: 'Performance Focus' },
               ].map((s) => (
                 <div key={s.label} className="text-center lg:text-left">
