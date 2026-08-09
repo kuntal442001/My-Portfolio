@@ -32,7 +32,7 @@ export default function Hero() {
           >
             <motion.div variants={item} className="section-label justify-center lg:justify-start">
               <span className="h-px w-8 bg-accent/60" />
-              Creative WordPress Developer
+              Creative Website Developer
             </motion.div>
 
             <motion.h1 variants={item} className="heading-xl">
