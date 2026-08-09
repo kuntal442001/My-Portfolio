@@ -34,7 +34,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm leading-relaxed text-white/50 max-w-xs">
-              Creative WordPress Developer & Technical SEO Specialist. Building fast, custom, scalable
+              Creative Website Developer & Technical SEO Specialist. Building fast, custom, scalable
               websites that help businesses grow.
             </p>
           </div>
