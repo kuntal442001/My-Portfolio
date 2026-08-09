@@ -22,11 +22,11 @@ const channels = [
     icon: FaEnvelope,
   },
   {
-    id: 'phone',
-    label: 'Phone',
+    id: 'Whatsapp',
+    label: 'WhatsApp',
     value: '+91 9007216627',
     href: 'tel:+91 9007216627',
-    icon: FaPhone,
+    icon: FaWhatsapp,
   },
   {
     id: 'linkedin',
