@@ -63,7 +63,7 @@ export default function Hero() {
               variants={item}
               className="mt-8 max-w-xl text-lg leading-relaxed text-white/60 mx-auto lg:mx-0"
             >
-              I build high-performance WordPress websites with clean code, custom functionality,
+              I build high-performance websites with clean code, custom functionality,
               excellent user experience, and technical SEO that helps businesses grow.
             </motion.p>
 

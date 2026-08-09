@@ -37,7 +37,7 @@ export default function About() {
               About Me
             </div>
             <h2 className="heading-lg">
-              I build WordPress sites that <span className="text-accent-gradient">feel custom</span> — not templated.
+              I build Websites that <span className="text-accent-gradient">feel custom</span> — not templated.
             </h2>
 
             <div className="mt-8 grid grid-cols-2 gap-3">
@@ -68,7 +68,7 @@ export default function About() {
             variants={{ show: { transition: { staggerChildren: 0.12 } } }}
           >
             <motion.p variants={fadeUp} className="text-lg leading-relaxed text-white/75">
-              I&apos;m a WordPress developer who writes code, not just configures page builders. Every
+              I&apos;m a Website developer who writes code, not just configures page builders. Every
               project I take on starts with a question: <span className="text-white">what does this site need to do for the business?</span> Then I
               architect it from the ground up — custom post types, ACF blocks, plugin logic, and a frontend
               that loads fast and ranks well.
