@@ -173,7 +173,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative section-py">
-      <div className="container-px w-full max-w-5xl mx-auto">
+      <div className="container-px w-full max-w-7xl mx-auto">
         <motion.div
           className="relative overflow-hidden rounded-3xl glass-strong p-8 md:p-14 lg:p-20 text-center"
           initial={{ opacity: 0, y: 40 }}
