@@ -47,7 +47,7 @@ export default function Hero() {
               variants={item}
               className="mt-6 flex flex-wrap gap-2 justify-center lg:justify-start"
             >
-              {['Creative WordPress Developer', 'Elementor Expert', 'Technical SEO Specialist'].map(
+              {['Creative Website Developer', 'Elementor Expert', 'Technical SEO Specialist'].map(
                 (tag) => (
                   <span
                     key={tag}
