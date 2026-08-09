@@ -75,7 +75,7 @@ export default function About() {
             </motion.p>
 
             <motion.p variants={fadeUp} className="text-lg leading-relaxed text-white/60">
-              My day-to-day work spans custom WordPress builds, Elementor design systems, WooCommerce and
+              My day-to-day work spans custom Website builds, Elementor design systems, WooCommerce and
               Shopify storefronts, and the technical SEO layer that ties it all together — schema markup,
               Core Web Vitals, clean permalinks, and on-page optimization. I treat SEO as part of the
               architecture, not a checklist item bolted on at the end.
