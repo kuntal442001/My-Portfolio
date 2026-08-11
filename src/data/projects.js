@@ -78,6 +78,60 @@ export const projects = [
     ],
   },
   {
+    id: 'flask-auth-app',
+
+    name: 'Flask Authentication System',
+
+    tagline: 'Secure user authentication system built with Flask.',
+
+    url: 'https://github.com/kuntal442001/Flask-Auth-App',
+
+    liveUrl: null,
+
+    github: 'https://github.com/kuntal442001/Flask-Auth-App',
+
+    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&q=80&auto=format&fit=crop',
+
+    overview:
+    'A full-stack authentication web application built with Flask, providing user registration, secure login, protected dashboard access, password management, and session-based authentication.',
+
+    problem:
+    'Authentication systems require careful handling of user credentials, sessions, validation, and repeated login attempts. The goal was to build a simple but structured authentication flow with proper database integration and basic security protections.',
+
+    solution:
+    'Built a Flask-based authentication system using Flask-SQLAlchemy and Flask-Login, with SQLite for persistent user data. Implemented registration and login validation, securely hashed passwords, protected routes, persistent login sessions, password changes, logout functionality, database health checks, and request rate limiting.',
+
+    technologies: [
+    'Python',
+    'Flask',
+    'Flask-SQLAlchemy',
+    'Flask-Login',
+    'Flask-Limiter',
+    'SQLite',
+    'Jinja2',
+    'HTML',
+    'CSS'
+    ],
+
+    challenges: [
+    'Implementing secure password hashing and verification instead of storing plain-text passwords.',
+    'Managing authenticated sessions and protecting dashboard and password-management routes.',
+    'Adding validation for usernames, emails, passwords, and duplicate accounts.',
+    'Handling repeated login and registration attempts with request rate limiting.',
+    'Keeping authentication, database operations, validation, and error handling organized within the Flask application.'
+    ],
+
+    results: [
+    'Complete registration and login workflow with persistent user accounts.',
+    'Protected dashboard accessible only to authenticated users.',
+    'Secure password storage using Werkzeug password hashing.',
+    'Password change and logout functionality.',
+    'Rate limiting to help prevent excessive authentication requests.',
+    'SQLite-backed user management with SQLAlchemy.'
+    ],
+
+  },
+  {
     id: 'language-translator',
     name: 'Language Translator',
     tagline: 'Real-time browser-based translation app.',
