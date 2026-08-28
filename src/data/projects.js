@@ -132,6 +132,52 @@ export const projects = [
 
   },
   {
+    id: 'budgetbee',
+    name: 'BudgetBee',
+    tagline: 'AI-powered expense tracker built with Flask.',
+    url: 'https://github.com/kuntal442001/BudgetBee',
+    liveUrl: null,
+    github: 'https://github.com/kuntal442001/BudgetBee',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80&auto=format&fit=crop',
+  
+    overview:
+      'A full-stack personal finance web app built with Flask, combining expense tracking, authentication, visual analytics, CSV export, and AI-generated spending insights powered by Google Gemini.',
+  
+    problem:
+      'Manually tracking day-to-day expenses and making sense of spending patterns is tedious, and most simple budgeting tools stop at raw numbers without explaining what they mean. The goal was to build a secure, self-hosted expense tracker that not only records transactions but also interprets spending behavior for the user.',
+  
+    solution:
+      'Built a Flask application with user authentication and a SQLite-backed database for persistent expense records. Added chart-based visualizations for spending breakdowns, CSV export for offline analysis, and an AI Insights feature that aggregates a user\'s spending statistics and sends them to Google\'s Gemini API (via its OpenAI-compatible endpoint) to generate a validated, human-readable summary directly on the dashboard.',
+  
+    technologies: [
+      'Python',
+      'Flask',
+      'SQLite',
+      'Jinja2',
+      'HTML',
+      'CSS',
+      'Google Gemini API',
+      'Chart.js'
+    ],
+  
+    challenges: [
+      'Integrating a third-party AI API securely, keeping the Gemini key server-side only and never exposing it to the browser.',
+      'Validating and safely rendering AI-generated JSON responses before displaying them on the dashboard.',
+      'Designing a database schema and migration script to support evolving expense-tracking features.',
+      'Aggregating and summarizing spending data in a format useful for both charts and AI analysis.',
+      'Structuring environment-based configuration to keep secrets, database files, and API keys out of version control.'
+    ],
+  
+    results: [
+      'Working expense tracker with authenticated, per-user data.',
+      'Visual dashboard with charts summarizing spending by category.',
+      'CSV export for offline record-keeping.',
+      'AI-generated spending insights refreshed on demand from the dashboard.',
+      'Secure, environment-variable-based configuration with a documented setup guide.',
+      'SQLite-backed storage with a dedicated migration script for schema updates.'
+    ],
+  },
+  {
     id: 'language-translator',
     name: 'Language Translator',
     tagline: 'Real-time browser-based translation app.',
