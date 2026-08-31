@@ -136,7 +136,7 @@ export const projects = [
     name: 'BudgetBee',
     tagline: 'AI-powered expense tracker built with Flask.',
     url: 'https://github.com/kuntal442001/BudgetBee',
-    liveUrl: null,
+    liveUrl: 'https://budget-bee-two.vercel.app/',
     github: 'https://github.com/kuntal442001/BudgetBee',
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80&auto=format&fit=crop',
   
