@@ -1,28 +1,51 @@
 export const projects = [
   {
-    id: 'spotify-clone',
-    name: 'Spotify Clone',
-    tagline: 'A full-featured music streaming web app inspired by Spotify.',
-    url: 'https://github.com/kuntal442001/Spotify-Clone',
-    liveUrl: null,
-    github: 'https://github.com/kuntal442001/Spotify-Clone',
-    image: 'https://images.unsplash.com/photo-1611339555312-e607c8352fd7?w=1200&q=80&auto=format&fit=crop',
+    id: 'safarledger',
+    name: 'SafarLedger',
+    tagline: 'Travel agency management and financial operations platform.',
+    url: '',
+    liveUrl: 'https://safarledger.vercel.app/dashboard/',
+    github: 'https://github.com/kuntal442001/SafarLedger',
+    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80&auto=format&fit=crop',
+  
     overview:
-      'A modern music streaming interface that replicates the core Spotify experience — playlist browsing, album art, player controls, and responsive layouts — built with a focus on smooth interactions and pixel-perfect UI.',
+      'A full-stack travel agency management platform designed for tour operators and travel agencies to manage tours, travelers, itineraries, expenses, settlements, and trip-wise profitability from a single dashboard.',
+  
     problem:
-      'Recreating the polish of a flagship consumer app like Spotify requires tight attention to micro-interactions, audio state management, and responsive design across desktop and mobile breakpoints.',
+      'Travel agencies often manage customer information, trip operations, vendor expenses, payments, and profitability across spreadsheets, messaging apps, and disconnected tools. This makes it difficult to maintain accurate financial records and understand the profitability of each tour. SafarLedger was built to bring these operational and financial workflows into one centralized system.',
+  
     solution:
-      'Built a component-driven architecture in React with reusable player controls, playlist views, and a global player context. Used Tailwind for pixel-perfect styling that mirrors the original product while keeping the codebase lean.',
-    technologies: ['React', 'JavaScript', 'Tailwind CSS', 'HTML5 Audio', 'Vite'],
-    challenges: [
-      'Synchronizing audio playback state across multiple components without prop drilling.',
-      'Handling responsive breakpoints while keeping the dense Spotify-style layout intact.',
-      'Building reusable, accessible player controls (play / pause / seek / volume).',
+      'Built SafarLedger as a centralized travel-business management platform with dedicated workflows for tours, travelers, itineraries, expenses, settlements, and reporting. The application uses a structured backend architecture with Flask, PostgreSQL, and SQLAlchemy to maintain persistent business data while providing dashboards and financial summaries that help agencies track tour performance and profitability.',
+  
+    technologies: [
+      'Python',
+      'Flask',
+      'PostgreSQL',
+      'SQLAlchemy',
+      'Jinja2',
+      'HTML',
+      'CSS',
+      'JavaScript'
     ],
+  
+    challenges: [
+      'Designing a relational data model that connects tours, travelers, itineraries, expenses, payments, and settlements without duplicating business data.',
+      'Building a workflow that follows the actual operational lifecycle of a travel agency from tour creation through expenses and final settlement.',
+      'Calculating tour-level financial performance by combining customer payments, operational expenses, and settlement records.',
+      'Structuring the Flask application using separate modules for tours, travelers, itineraries, expenses, and dashboards to keep the codebase maintainable.',
+      'Managing PostgreSQL database relationships and schema changes as new travel-management features were introduced.',
+      'Designing the platform with a future B2B SaaS model in mind so individual travel agencies can manage their own operational and financial data.'
+    ],
+  
     results: [
-      'Pixel-faithful Spotify UI reproduction with smooth playback state.',
-      'Fully responsive across mobile, tablet, and desktop breakpoints.',
-      'Clean component architecture that is easy to extend with new features.',
+      'Centralized travel agency management system for tours and trip operations.',
+      'Tour-wise traveler and itinerary management.',
+      'Expense tracking linked to individual tours.',
+      'Financial settlement and reporting workflows.',
+      'Dashboard for monitoring operational and financial information.',
+      'PostgreSQL-backed persistent business data with SQLAlchemy ORM.',
+      'Structured Flask blueprint architecture for maintainable feature development.',
+      'Foundation for a B2B SaaS platform targeting travel agencies and tour operators.'
     ],
   },
   {
