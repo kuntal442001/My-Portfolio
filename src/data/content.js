@@ -35,12 +35,12 @@ export const experience = [
   {
     id: 'leadsark',
     company: 'LeadsArk Edutech Pvt. Ltd.',
-    role: 'WordPress Web Developer',
+    role: 'Web Developer',
     period: 'Current Position',
     current: true,
     location: 'India',
     description:
-      'Leading custom WordPress development end-to-end — from architecture and Elementor design systems to plugin development, ACF-driven content modeling, and technical SEO. I own the technical quality bar for every site that ships.',
+      'Leading custom web development end-to-end — from architecture and Elementor design systems to plugin development, ACF-driven content modeling, technical SEO, and performance optimization. I also build Python/Flask-based backend applications and REST APIs, handling database integration, business logic, and automation. I own the technical quality bar for every project that ships, ensuring solutions are scalable, performant, and maintainable.',
     responsibilities: [
       'Custom WordPress Development',
       'Elementor Development',
@@ -50,6 +50,9 @@ export const experience = [
       'Shortcodes',
       'Technical SEO',
       'Performance Optimization',
+      'Python & Flask Development',
+      'REST API Development & Integration',
+      'Database Design & Management',
       'Client Communication',
     ],
   },
