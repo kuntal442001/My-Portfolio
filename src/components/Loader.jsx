@@ -109,7 +109,7 @@ export default function Loader({ onComplete }) {
                 Kuntal Bhattacharyya
               </div>
               <div className="mt-2 font-mono text-[10px] tracking-[0.3em] text-accent/70 uppercase">
-                WordPress Engineer · SEO Specialist
+                Website Developer · On PageSEO Specialist
               </div>
             </motion.div>
 
